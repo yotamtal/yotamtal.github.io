@@ -101,17 +101,17 @@ function layout() {
     
     var box = boxes[i];
         
-    var lastX = box.x;
-    var lastY = box.y;   
+    var lastX = box.getBoundingClientRect().x;
+    var lastY = box.getBoundingClientRect().y;   
        
-    var lastW = box.width;
-    var lastH = box.height;     
+    var lastW = box.getBoundingClientRect().width;
+    var lastH = box.getBoundingClientRect().height;     
     
-    var width  = box.width  = box.node.offsetWidth;
-    var height = box.height = box.node.offsetHeight;
+    var width  = box.getBoundingClientRect().width  = box.node.getBoundingClientRect().offsetWidth;
+    var height = box.getBoundingClientRect().height = box.node.getBoundingClientRect().offsetHeight;
     
-    box.x = box.node.offsetLeft;
-    box.y = box.node.offsetTop;      
+    box.x = box.node.getBoundingClientRect().offsetLeft;
+    box.y = box.node.getBoundingClientRect().offsetTop;      
         
     if (lastX !== box.x || lastY !== box.y) {
       
