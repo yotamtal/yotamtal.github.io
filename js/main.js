@@ -62,8 +62,8 @@ var boxes  = [];
 for (var i = 0; i < total; i++) {
     
   var node   = nodes[i];  
-  var width  = node.offsetWidth;
-  var height = node.offsetHeight;    
+  var width  = node.getBoundingClientRect().offsetWidth;
+  var height = node.getBoundingClientRect().offsetHeight;    
   var color  = "transparent";    
     
   // Need another element to animate width & height... use clone instead of editing HTML
@@ -77,8 +77,8 @@ for (var i = 0; i < total; i++) {
   node.appendChild(content);
     
   var transform = node._gsTransform;
-  var x = node.offsetLeft;
-  var y = node.offsetTop;
+  var x = node.getBoundingClientRect().offsetLeft;
+  var y = node.getBoundingClientRect().offsetTop;
   
   boxes[i] = { content, height, node, transform, width, x, y };
 } 
