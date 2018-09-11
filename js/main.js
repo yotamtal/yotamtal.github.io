@@ -65,7 +65,7 @@ for (var i = 0; i < total; i++) {
   var width  = node.getBoundingClientRect().width;
   var height = node.getBoundingClientRect().height;    
   var color  = "transparent";    
-    
+
   // Need another element to animate width & height... use clone instead of editing HTML
   var content = node.cloneNode(true);
   content.classList.add("item-content");
