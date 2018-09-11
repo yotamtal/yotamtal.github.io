@@ -9,12 +9,14 @@ html, body {
 #app {
     height: 100%;
     width: 100%;
+    background: #ececec;
 }
 
 #header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px;
 }
 /**
 * Logo animation classes
