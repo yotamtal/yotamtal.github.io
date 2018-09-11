@@ -19,7 +19,7 @@
 <body> 
     <div id="app">
         <div id="header"> 
-            <div class="flex-container" id="justify">
+            <div class="flex-container" id="align">
                 <svg class="item" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="313.653px" height="313.653px" viewBox="0 0 313.653 313.653" style="enable-background:new 0 0 313.653 313.653;"
                     xml:space="preserve">
@@ -1903,8 +1903,13 @@
             </div>
         </div>
     </div>
-    <input name="justify-content" type="radio" class="justify-content" id="R41" value="justify-start" checked><label for="R41">flex-start:</label>
-    <input name="justify-content" type="radio" class="justify-content" id="R42" value="justify-end"><label for="R42">flex-end:</label>
+    <div class="radio">
+        <input name="flex-align-items" type="radio" class="flex-align-items" id="R31" value="align-items-start"><label for="R31">flex-start:</label>
+        <input name="flex-align-items" type="radio" class="flex-align-items" id="R32" value="align-items-end"><label for="R32">flex-end:</label>
+        <input name="flex-align-items" type="radio" class="flex-align-items" id="R33" value="align-items-center"><label for="R33">center:</label>
+        <input name="flex-align-items" type="radio" class="flex-align-items" id="R34" value="align-items-baseline"><label for="R34">baseline:</label>
+        <input name="flex-align-items" type="radio" class="flex-align-items" id="R35" value="align-items-stretch" checked><label for="R35">stretch:</label>
+    </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
     <script src="js/main.js"></script> 
 </body>
