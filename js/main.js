@@ -58,7 +58,7 @@ var time   = 0.9;
 var omega  = 12;
 var zeta   = 0.9;
 var boxes  = [];
-
+ 
 for (var i = 0; i < total; i++) {
     
   var node   = nodes[i];  
