@@ -1,6 +1,12 @@
 /**
 * App classes
 */
+*{
+    box-sizing : border-box; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -18,6 +24,179 @@ html, body {
     justify-content: center;
     padding: 8px;
 }
+
+/**
+* Flexbox classes
+*/
+.flex-container.row {
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.flex-container.row-reverse {
+	-webkit-flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+.flex-container.column {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.flex-container.column-reverse {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column-reverse;
+}
+/*flex-wrap: nowrap | wrap | wrap-reverse;*/
+
+.flex-container.nowrap {
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+.flex-container.wrap {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.flex-container.wrap-reverse {
+	-webkit-flex-wrap: wrap-reverse;
+	-ms-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
+}
+/*align-items: flex-start | flex-end | center | baseline | stretch;*/
+
+.flex-container.align-items-start {
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.flex-container.align-items-end {
+	-webkit-align-items: flex-end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+.flex-container.align-items-center {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.flex-container.align-items-baseline {
+	-webkit-align-items: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+}
+.flex-container.align-items-stretch {
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+/*justify-content: flex-start | flex-end | center | space-between | space-around;*/
+
+.flex-container.justify-start {
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.flex-container.justify-end {
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.flex-container.justify-center {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.flex-container.justify-space-between {
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.flex-container.justify-space-around {
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: justify;
+	justify-content: space-around;
+}
+/*align-content: flex-start | flex-end | center | space-between | space-around | stretch;*/
+
+.flex-container.align-content-start {
+	-webkit-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+}
+.flex-container.align-content-end {
+	-webkit-align-content: flex-end;
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+}
+.flex-container.align-content-center {
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
+	align-content: center;
+}
+.flex-container.align-content-space-between {
+	-webkit-align-content: space-between;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+}
+.flex-container.align-content-space-around {
+	-webkit-align-content: space-around;
+	-ms-flex-line-pack: justify;
+	/*distribute;*/
+	align-content: space-around;
+}
+.flex-container.align-content-stretch {
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+}
+/*align-self: auto | flex-start | flex-end | center | baseline | stretch;*/
+
+.item.align-self-auto {
+	-webkit-align-self: auto;
+	-ms-flex-item-align: auto;
+	align-self: auto;
+}
+.item.align-self-start {
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+.item.align-self-end {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+.item.align-self-center {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+.item.align-self-baseline {
+	-webkit-align-self: baseline;
+	-ms-flex-item-align: baseline;
+	align-self: baseline;
+}
+.item.align-self-stretch {
+	-webkit-align-self: stretch;
+	-ms-flex-item-align: stretch;
+	align-self: stretch;
+}
+.item.flex-grow1 {
+	flex-grow: 1;
+}
+.item.flex-grow2 {
+	flex-grow: 2;
+}
+.item.flex-grow3 {
+	flex-grow: 3;
+}
+.item.flex-grow4 {
+	flex-grow: 4;
+}
+
 /**
 * Logo animation classes
 */
