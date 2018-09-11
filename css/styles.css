@@ -22,7 +22,7 @@
 	animation-delay: 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st1 {
 	fill: #1e448f;
@@ -32,7 +32,7 @@
 	animation-delay: 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st2 {
 	fill: url(#SVGID_2_);
@@ -47,7 +47,7 @@
 	animation-delay: 0s, 0.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st3 {
 	fill: #ffffff;
@@ -61,7 +61,7 @@
 	animation-delay: 3s, 5.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st4 {
 	fill: #6999d1;
@@ -71,7 +71,7 @@
 	animation-delay: 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st5 {
 	fill: #699ad1;
@@ -81,7 +81,7 @@
 	animation-delay: 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st6 {
 	fill: url(#SVGID_1_);
@@ -96,7 +96,7 @@
 	animation-delay: 0s, 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 .st7 {
 	fill: url(#SVGID_3_);
@@ -111,7 +111,7 @@
 	animation-delay: 0s, 3.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-iteration: 1;
+
 }
 @keyframes draw {
 	to {
