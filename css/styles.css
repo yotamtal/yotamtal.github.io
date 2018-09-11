@@ -15,7 +15,7 @@
 * Logo animation classes
 */
 .st0 {
-	fill: #1d458e;
+	fill: #1d458e; 
 	fill-opacity: 0;
 	animation-name: FillIn;
 	animation-duration: 1s;
