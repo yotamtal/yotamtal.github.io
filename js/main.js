@@ -122,7 +122,7 @@ function layout() {
       TweenLite.set(box.node, { x, y });
       TweenLite.to(box.node, time, { x: 0, y: 0, ease });
     }
-        
+          
     if (lastW !== box.width || lastH !== box.height) {      
       
       TweenLite.to(box.content, time, { autoRound: false, width, height, ease });      
