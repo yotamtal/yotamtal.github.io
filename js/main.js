@@ -62,8 +62,8 @@ var boxes  = [];
 for (var i = 0; i < total; i++) {
     
   var node   = nodes[i];  
-  var width  = node.getBoundingClientRect().offsetWidth;
-  var height = node.getBoundingClientRect().offsetHeight;    
+  var width  = node.getBoundingClientRect().width;
+  var height = node.getBoundingClientRect().height;    
   var color  = "transparent";    
     
   // Need another element to animate width & height... use clone instead of editing HTML
@@ -77,8 +77,8 @@ for (var i = 0; i < total; i++) {
   node.appendChild(content);
     
   var transform = node._gsTransform;
-  var x = node.getBoundingClientRect().offsetLeft;
-  var y = node.getBoundingClientRect().offsetTop;
+  var x = node.getBoundingClientRect().x;
+  var y = node.getBoundingClientRect().y;
   
   boxes[i] = { content, height, node, transform, width, x, y };
 } 
@@ -107,11 +107,11 @@ function layout() {
     var lastW = box.width;
     var lastH = box.height;     
     
-    var width  = box.width  = box.node.getBoundingClientRect().offsetWidth;
-    var height = box.height = box.node.getBoundingClientRect().offsetHeight;
+    var width  = box.width  = box.node.getBoundingClientRect().width;
+    var height = box.height = box.node.getBoundingClientRect().height;
     
-    box.x = box.node.getBoundingClientRect().offsetLeft;
-    box.y = box.node.getBoundingClientRect().offsetTop;      
+    box.x = box.node.getBoundingClientRect().x;
+    box.y = box.node.getBoundingClientRect().y;      
         
     if (lastX !== box.x || lastY !== box.y) {
       
