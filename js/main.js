@@ -128,7 +128,7 @@ function layout() {
       TweenLite.to(box.content, time, { autoRound: false, width, height, ease });      
     }
   }  
-}
+} 
 
 function ease(progress) {
   var beta  = Math.sqrt(1.0 - zeta * zeta);
