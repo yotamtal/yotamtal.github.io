@@ -21,10 +21,18 @@ html, body {
 #header {
     /* display: flex;
     align-items: center;
-    justify-content: center; */
+	justify-content: center; */
+	height: 100%;
     padding: 8px;
 }
 
+.invisible{
+	display: none;
+}
+
+.full-height{
+	height: 100%;
+}
 /**
 * Flexbox classes
 */

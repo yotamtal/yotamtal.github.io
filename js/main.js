@@ -1,56 +1,9 @@
-var path = document.querySelector(".st3");
-var total_length = path.getTotalLength();
-console.log(total_length); 
+// var path = document.querySelector(".st3");
+// var total_length = path.getTotalLength();
+// console.log(total_length); 
 
-//
-// Flexbox transition animations by Gabi
-// ===========================================================================
-function changeFlex(e, t) {
-  for (var n = document.querySelectorAll("." + e), l = document.querySelector("#" + t), r = 0; r < n.length; r++) n[r].addEventListener("change", function() {
-    var e = this.value;
-    l.setAttribute("class", "flex-container " + e)
-  }, !1)
-}
-
-function changeItemFlex(e, t) {
-  for (var n = document.querySelectorAll("." + e), l = document.querySelector("#" + t), r = 0; r < n.length; r++) n[r].addEventListener("change", function() {
-    var e = this.value;
-    l.setAttribute("class", "item " + e)
-  }, !1)
-}
-
-function changeFlexBasis(e, t) {
-  var n = isNaN(e.value) ? 0 : e.value;
-  document.querySelector("#" + t).style.WebkitFlexBasis = n + "%", document.querySelector("#" + t).style.flexBasis = n + "%"
-}
-
-function changeFlexGrow(e, t) {
-  var n = isNaN(e.value) ? 0 : e.value;
-  document.querySelector("#" + t).style.WebkitFlexGrow = n, document.querySelector("#" + t).style.flexGrow = n
-}
-
-function changeFlexShrink(e, t) {
-  var n = isNaN(e.value) ? 0 : e.value;
-  document.querySelector("#" + t).style.WebkitFlexShrink = n, document.querySelector("#" + t).style.flexShrink = n
-}
-
-function changeFlexOrder(e, t) {
-  var n = isNaN(e.value) ? 0 : e.value;
-  document.querySelector("#" + t).style.WebkitOrder = n, document.querySelector("#" + t).style.order = n
-}
-
-function changeAll(e, t, n, l) {
-  changeFlexBasis(e, l), changeFlexGrow(t, l), changeFlexShrink(n, l)
-}
-
-changeFlex("flex-direction", "direction");
-changeFlex("justify-content", "justify");
-changeFlex("align-content", "alignContent");
-
-//
 // ANIMATIONS
 // ===========================================================================
-var inputs = document.querySelectorAll("input");
 var nodes  = document.querySelectorAll(".item");
 var total  = nodes.length;
 var dirty  = true;
@@ -82,10 +35,6 @@ for (var i = 0; i < total; i++) {
   
   boxes[i] = { content, height, node, transform, width, x, y };
 } 
-
-for (var i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener("change", layout);
-}
 
 window.addEventListener("resize", () => { dirty = true; });
 
@@ -139,3 +88,12 @@ function ease(progress) {
 
   return 1 - progress;
 }
+
+setTimeout(function(){
+  let logo = document.querySelector(".flex-container");
+  logo.classList.remove('justify-center');
+  logo.classList.add('justify-start');
+  logo.classList.remove('align-items-center');
+  logo.classList.remove('align-items-start');
+  layout();
+},5000)
