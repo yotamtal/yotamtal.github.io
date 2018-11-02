@@ -21,6 +21,10 @@
     <div id="app" style="display:none">
         <div id="left" class="full-height half-width"> 
             <canvas id="waves"></canvas>
+            <div id="sound-wrapper" class="content-wrapper" style="visibility: hidden; opacity: 0;">
+                <h3 id="sound-title">Sound</h3>
+                <p id="sound-description">description... description... description... description... </p>
+            </div>
             <!-- <span id="sound">Sound</span> -->
         </div>
         <div id="handle" class="handle">
@@ -72,22 +76,28 @@
             zui.zoomTo(6 * zoomAnimation.ratio, two.width / 2 - 2.01, two.height / 2);
         }
     });
-</div>
+                </div>
             </div>
             <div id="codeOverlay"></div>
-            <!-- <span id="tech">Tech</span> -->
+            <div id="tech-wrapper" class="content-wrapper" style="visibility: hidden; opacity: 0;">
+                <div class="cat-meta">
+                    <h3 id="tech-title">Tech</h3>
+                    <p id="tech-description">description... description... description... description... </p>
+                </div>
+            </div>
         </div>
+        <div id="about">
+            About text
+        </div>
+    </div>
+    <div id="content">
+        <section id="tech-grid" class="grid-container"></section>
+        <section id="tech-content" class="content"><div class="scroll-wrap"></div></section>
+        <section id="sound-grid" class="grid-container"></section>
+        <section id="sound-content" class="content"><div class="scroll-wrap"></div></section>
     </div>
     <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
     <div id="intro"></div>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="filters">
-        <defs>
-            <filter id="blur">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
-            </filter>
-        </defs>
-    </svg> -->
     <script src="js/build.js"></script> 
-
 </body>
 </html>
