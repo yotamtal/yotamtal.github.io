@@ -684,9 +684,9 @@ html, body {
 
 #handle {
   width: 0px;
+  z-index: 9999999 !important;
   overflow: visible;
   position: relative;
-  z-index: 1000;
   cursor: move !important;
   cursor: grab !important;
   cursor: -moz-grab !important;
@@ -697,7 +697,8 @@ object.handle {
   cursor: move !important;
   cursor: grab !important;
   cursor: -moz-grab !important;
-  cursor: -webkit-grab !important; }
+  cursor: -webkit-grab !important;
+  width: 315px; }
 
 #logo {
   position: absolute;
